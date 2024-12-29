@@ -24,8 +24,11 @@ app.use(express.json())
 // console.log(authRoute)
 
 app.get('/',(req,res)=>{
-  res.send('Hello World')
-})
+    res.json({
+      message :  "Hello from backend"
+    })
+  })
+  
 
 app.use('/api/auth',userRoute)
 app.use('/api/orders',orderRoute)
