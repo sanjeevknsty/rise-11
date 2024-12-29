@@ -10,7 +10,7 @@ const LikedDishes = () => {
     const itemData = [
         {
             img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-            title: 'Breakfast',
+            title: 'Omlet',
         },
         {
             img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
@@ -25,8 +25,8 @@ const LikedDishes = () => {
             title: 'Coffee',
         },
         {
-            img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-            title: 'Hats',
+            img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+            title: 'Vada Pav',
         },
         {
             img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
@@ -50,11 +50,11 @@ const LikedDishes = () => {
         },
         {
             img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-            title: 'Sea star',
+            title: '',
         },
         {
             img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-            title: 'Bike',
+            title: '',
         },
     ];
     return (
@@ -72,7 +72,7 @@ const LikedDishes = () => {
                                     alt={item.title}
                                     loading="lazy"
                                 />
-                                <p >pavBhaji</p>
+                                <p >{item.title}</p>
                             </ImageListItem>
 
                         ))}
@@ -90,7 +90,7 @@ const LikedDishes = () => {
                                     alt={item.title}
                                     loading="lazy"
                                 />
-                                <p>pavBhaji</p>
+                                <p>{item.title}</p>
                             </ImageListItem>
 
                         ))}
