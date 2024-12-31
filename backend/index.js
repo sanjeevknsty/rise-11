@@ -14,7 +14,7 @@ connectionToMongoose()
 
 const app = express() 
 
-dotenv.config({ path: `${__dirname}/.env` });
+// dotenv.config({ path: `${__dirname}/.env` });
 
 
 app.use(cors())
