@@ -8,6 +8,7 @@ const dashBoardRoute = require("./routes/dashBoardRoute.js")
 const menuRoute = require("./routes/menuRoute.js")
 dotenv.config()
 
+
 const connectionToMongoose = require('./db.js')
 connectionToMongoose()
 
