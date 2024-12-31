@@ -6,7 +6,7 @@ const orderRoute = require("./routes/orderRoute.js")
 const customerRoute = require("./routes/customerRoute.js")
 const dashBoardRoute = require("./routes/dashBoardRoute.js")
 const menuRoute = require("./routes/menuRoute.js")
-dotenv.config()
+// dotenv.config()
 
 
 const connectionToMongoose = require('./db.js')
@@ -14,7 +14,7 @@ connectionToMongoose()
 
 const app = express() 
 
-// dotenv.config({ path: `${__dirname}/.env` });
+dotenv.config({ path: `${__dirname}/.env` });
 
 
 app.use(cors())
