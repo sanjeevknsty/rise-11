@@ -1,3 +1,3 @@
-import app from ".."
+import app from "../index.js"
 
 module.exports = app
