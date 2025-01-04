@@ -24,7 +24,7 @@ app.use(express.json())
 
 // console.log(authRoute)
 
-app.send('/',(req,res)=>{
+app.get('/',(req,res)=>{
     res.json({
       message :  "Hello from backend"
     })
