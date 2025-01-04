@@ -1,3 +1,3 @@
 import app from "..";
 
-export default app
+module.exports = app

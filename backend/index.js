@@ -43,4 +43,6 @@ app.listen(port,()=>{
   console.log('listening',port)
 })
 
-export default app
+// export default app
+module.exports = app
+
