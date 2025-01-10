@@ -12,7 +12,9 @@ dotenv.config()
 const connectionToMongoose = require('./db.js')
 connectionToMongoose()
 
-const app = express() 
+// const app = express() 
+
+const app = require("./api/index.js")
 
 // dotenv.config({ path: `${__dirname}/.env` });
 
@@ -38,10 +40,10 @@ app.use('/api/menu',menuRoute)
 app.use('/api/dashboard',dashBoardRoute)
 
 
-port = process.env.PORT || 6000
-app.listen(3000,()=>{
-  console.log('listening')
-})
+// port = process.env.PORT || 6000
+// app.listen(3000,()=>{
+//   console.log('listening')
+// })
  
 // export default app
 // module.exports = app
