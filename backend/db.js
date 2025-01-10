@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 const dotenv = require('dotenv'); 
-dotenv.config()
+// dotenv.config()
+dotenv.config({ path: "./.env" });
 
 const connectToMongoose =async ()=>{
 
@@ -11,7 +12,7 @@ const connectToMongoose =async ()=>{
     // useUnifiedTopology: true,
     // // useFindAndModify: true,
     // }
-    
+
     
 );
     console.log(`mongoose connected${connect.connection.host}`)

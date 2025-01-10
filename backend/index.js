@@ -1,43 +1,20 @@
-const express = require('express')
-var cors = require('cors')
-const dotenv = require('dotenv')
+// const express = require('express')
 const userRoute = require('./routes/userRoute.js')
 const orderRoute = require("./routes/orderRoute.js")
 const customerRoute = require("./routes/customerRoute.js")
 const dashBoardRoute = require("./routes/dashBoardRoute.js")
 const menuRoute = require("./routes/menuRoute.js")
-dotenv.config()
 
 
-const connectionToMongoose = require('./db.js')
-connectionToMongoose()
+// const app = require("./api/index.js")
 
-// const app = express() 
-
-const app = require("./api/index.js")
-
-// dotenv.config({ path: `${__dirname}/.env` });
-
-
-app.use(cors())
-app.use(express.json())
- 
-
-
-// console.log(authRoute)
-
-app.get('/',(req,res)=>{
-    res.json({
-      message :  "Hello from backend"
-    })
-  })
   
 
-app.use('/api/auth',userRoute)
-app.use('/api/orders',orderRoute)
-app.use('/api/customer',customerRoute)
-app.use('/api/menu',menuRoute)
-app.use('/api/dashboard',dashBoardRoute)
+// app.use('/api/auth',userRoute)
+// app.use('/api/orders',orderRoute)
+// app.use('/api/customer',customerRoute)
+// app.use('/api/menu',menuRoute)
+// app.use('/api/dashboard',dashBoardRoute)
 
 
 // port = process.env.PORT || 6000
