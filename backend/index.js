@@ -39,8 +39,8 @@ app.use('/api/dashboard',dashBoardRoute)
 
 
 port = process.env.PORT || 6000
-app.listen(port,()=>{
-  console.log('listening',port)
+app.listen(3000,()=>{
+  console.log('listening')
 })
  
 // export default app
