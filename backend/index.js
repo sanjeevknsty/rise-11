@@ -6,15 +6,15 @@ const dashBoardRoute = require("./routes/dashBoardRoute.js")
 const menuRoute = require("./routes/menuRoute.js")
 
 
-// const app = require("./api/index.js")
+const app = require("./api/index.js")
 
   
 
-// app.use('/api/auth',userRoute)
-// app.use('/api/orders',orderRoute)
-// app.use('/api/customer',customerRoute)
-// app.use('/api/menu',menuRoute)
-// app.use('/api/dashboard',dashBoardRoute)
+app.use('/api/auth',userRoute)
+app.use('/api/orders',orderRoute)
+app.use('/api/customer',customerRoute)
+app.use('/api/menu',menuRoute)
+app.use('/api/dashboard',dashBoardRoute)
 
 
 // port = process.env.PORT || 6000

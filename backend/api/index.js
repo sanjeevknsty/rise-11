@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
 const dotenv = require('dotenv')
-const path = require('path');
 const connectionToMongoose = require('../db.js')
-// dotenv.config()
+// dotenv.config('../.env')
+// dotenv.config({ path: `${__dirname}/.env` });
+dotenv.config({ path: "../.env" });
+
+
 
 const userRoute = require('../routes/userRoute.js')
 const orderRoute = require("../routes/orderRoute.js")
@@ -11,7 +14,7 @@ const customerRoute = require("../routes/customerRoute.js")
 const dashBoardRoute = require("../routes/dashBoardRoute.js")
 const menuRoute = require("../routes/menuRoute.js")
 
-dotenv.config({ path: "../.env" });
+
 var cors = require('cors')
 
 app.use(cors())
