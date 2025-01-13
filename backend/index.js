@@ -23,5 +23,5 @@ app.use('/api/dashboard',dashBoardRoute)
 // })
  
 // export default app
-// module.exports = app
+module.exports = app
 
