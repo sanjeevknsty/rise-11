@@ -7,14 +7,13 @@ const menuRoute = require("./routes/menuRoute.js")
 
 
 const app = require("./api/index.js")
+console.log(app)
 
-  
-
-app.use('/api/auth',userRoute)
-app.use('/api/orders',orderRoute)
-app.use('/api/customer',customerRoute)
-app.use('/api/menu',menuRoute)
-app.use('/api/dashboard',dashBoardRoute)
+// app.use('/api/auth',userRoute)
+// app.use('/api/orders',orderRoute)
+// app.use('/api/customer',customerRoute)
+// app.use('/api/menu',menuRoute)
+// app.use('/api/dashboard',dashBoardRoute)
 
 
 // port = process.env.PORT || 6000
@@ -23,5 +22,11 @@ app.use('/api/dashboard',dashBoardRoute)
 // })
  
 // export default app
+app.get('/',(req,res)=>{
+    res.json({
+      message :  "Hello from backend"
+    })
+  })
+
 module.exports = app
 

@@ -36,13 +36,12 @@ app.get('/',(req,res)=>{
   app.use('/api/menu',menuRoute)
   app.use('/api/dashboard',dashBoardRoute)
 
-
-
 port = process.env.PORT || 6000
 
 app.listen(port,()=>{
   console.log('listening',port)
 })
  
-
 module.exports = app;
+
+
